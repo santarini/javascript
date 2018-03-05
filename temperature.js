@@ -1,6 +1,6 @@
 function tempConvert(farenheit){
-				return (5/9) * (farenheit-32);
-			}
+	return (5/9) * (farenheit-32);
+}
       
 var y = 77;
 var x = tempConvert(y);
