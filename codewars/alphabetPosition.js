@@ -4,12 +4,14 @@ function alphabetPosition(text) {
   for(x in text){
     if (alphabet.indexOf(text.charAt(x).toLowerCase()) == -1){
       continue;
+    }if(x == 0){
+    newString = (alphabet.indexOf(text.charAt(x).toLowerCase())+1);
     }else{
-   newString = (alphabet.indexOf(text.charAt(x).toLowerCase())+1) + " ";
+   newString = " " + (alphabet.indexOf(text.charAt(x).toLowerCase())+1); 
     }
     finalString = finalString + newString;
   }
-  alert(finalString)
+  return(finalString);
 }
 
 alphabetPosition("The sunset sets at twelve o' clock.");
