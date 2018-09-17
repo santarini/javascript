@@ -1,10 +1,3 @@
-funtion triangleOddRowSum(n){
-y = 0;
-for (i = 0; i <= n; i++){
-x = 2 * n +1;
-y = y + x;
+function triangleOddRowSum(n){
+alert(Math.pow((n-1),2)+n);
 }
-alert(y);
-}
-
-triangleOddRowSum(2)
