@@ -2,13 +2,14 @@ function alphabetPosition(text) {
   var finalString = "";
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   for(x in text){
-    if (text.charAt(x) === " "){
+    if (alphabet.indexOf(text.charAt(x)) === -1){
       continue;
     }else{
-   finalString = finalString + " " + (alphabet.indexOf(text.charAt(x))+1);
+   newString = (alphabet.indexOf(text.charAt(x.toLowerCase()))+1) + " ";
     }
+    finalString = finalString + newString;
   }
   alert(finalString)
 }
 
-alphabetPosition('b a c');
+alphabetPosition("The sunset sets at twelve o' clock.");
