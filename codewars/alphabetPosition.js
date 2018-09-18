@@ -1,3 +1,4 @@
+function removeSmallest(numbers) {
   x = Math.min.apply(null, numbers);
   y = numbers.indexOf(x);
   indexCount = [];
@@ -11,5 +12,6 @@
   }
   numbers.splice(y, 1);  
   return numbers
+}
 
 removeSmallest([1,2,1,4,5,1])
