@@ -1,14 +1,21 @@
-function alphabetPosition(text) {
-  var positionList = [];
-  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-  for(x in text){
-    if (alphabet.indexOf(text.charAt(x).toLowerCase()) == -1){
-      continue;
-    }else{
-    positionList.push(alphabet.indexOf(text.charAt(x).toLowerCase())+1);
+function removeSmallest(numbers) {
+  //find smallest number in array
+  x = Math.min.apply(null, numbers);
+  y = numbers.indexOf(x);
+  count = []
+  for (z in numbers){
+    if (z == x){
+      count.push(numbers.indexOf(x))
     }
-   }
-  alert(positionList.join(' '));
+  }
+  if (count.lenght 
+  {
+    
+  }
+
+  numbers.splice(y, 1);  
+  console.log(numbers);
 }
 
-alphabetPosition("The sunset sets at twelve o' clock.");
+
+removeSmallest([1,2,3,4,5])
