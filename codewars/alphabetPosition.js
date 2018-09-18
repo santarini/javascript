@@ -1,21 +1,15 @@
-function removeSmallest(numbers) {
-  //find smallest number in array
   x = Math.min.apply(null, numbers);
   y = numbers.indexOf(x);
-  count = []
+  indexCount = [];
   for (z in numbers){
-    if (z == x){
-      count.push(numbers.indexOf(x))
+    if (numbers[z] == x){
+      indexCount.push(Number(z));
     }
   }
-  if (count.lenght 
-  {
-    
+  if(indexCount.length > 1){
+     y = Math.min.apply(null, indexCount);
   }
-
   numbers.splice(y, 1);  
-  console.log(numbers);
-}
+  return numbers
 
-
-removeSmallest([1,2,3,4,5])
+removeSmallest([1,2,1,4,5,1])
