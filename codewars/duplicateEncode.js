@@ -1,6 +1,6 @@
 function duplicateEncode(word){
    word = word.toLowerCase();
-   secretCode = []
+   secretCode = [];
    for(x in word){
      letterCount = word.match((new RegExp(word.charAt(x), "g")) || []).length;
      if (letterCount == 1){
@@ -9,5 +9,7 @@ function duplicateEncode(word){
         secretCode.push(")");
       }
    }
-   return(secretCode.join().replace(new RegExp(",", "g"),""));
+   console.log(secretCode.join().replace(new RegExp(",", "g"),""));
 }
+
+duplicateEncode("balls")
